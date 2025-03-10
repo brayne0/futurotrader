@@ -1,27 +1,23 @@
-/* ======== ESTILOS GENERALES ======== */
+
 body {
     font-family: Arial, sans-serif;
     transition: background-color 0.3s, color 0.3s;
 }
 
-/* ======== MODO CLARO ======== */
 .light-mode {
     background-color: #f8f9fa;
     color: #000;
 }
 
-/* ======== MODO OSCURO ======== */
 .dark-mode {
     background-color: #121212;
     color: #fff;
 }
 
-/* ======== NAVBAR ======== */
 .navbar {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* ======== HERO SECTION ======== */
 .hero {
     background: linear-gradient(135deg, #002147, #0057b8);
     color: white;
@@ -29,7 +25,6 @@ body {
     text-align: center;
 }
 
-/* ======== SECCIONES PERSONALIZADAS ======== */
 .section-dark {
     background-color: #002147;
     color: white;
@@ -43,7 +38,6 @@ body {
     text-align: center;
 }
 
-/* ======== SECCIÓN "ANÁLISIS EN TIEMPO REAL" ======== */
 .section-image {
     background-size: cover;
     background-position: center;
@@ -52,19 +46,16 @@ body {
     transition: color 0.3s;
 }
 
-/* Texto oscuro en modo claro */
 .section-image {
     color: black;
     text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.7);
 }
 
-/* Texto claro en modo oscuro */
 .dark-mode .section-image {
     color: white;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
 }
 
-/* ======== FOOTER ======== */
 footer {
     background-color: #002147;
     color: white;

@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const toggleButton = document.getElementById("toggle-theme");
     const body = document.body;
     
-    // Verificar si el usuario ya tiene una preferencia guardada
     if (localStorage.getItem("theme") === "dark") {
         body.classList.add("dark-mode");
         toggleButton.textContent = "☀️ Modo Claro";
@@ -19,11 +18,10 @@ document.addEventListener("DOMContentLoaded", function () {
             toggleButton.textContent = "🌙 Modo Oscuro";
         }
 
-        // Actualizar el color de texto en la sección de "Análisis en Tiempo Real"
         updateTextColor();
     });
 
-    // Asegurar que el texto en la sección "Análisis en Tiempo Real" sea visible según el modo
+    // Brayne Duarte #21-2193
     function updateTextColor() {
         const section = document.getElementById("analisis");
         if (body.classList.contains("dark-mode")) {
@@ -33,6 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Aplicar ajuste inicial al cargar la página
     updateTextColor();
 });
