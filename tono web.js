@@ -26,7 +26,7 @@ document.addEventListener("DOMContentLoaded", function () {
       updateTextColor();
     });
   
-    // Ajustar el color del texto para modo oscuro/claro
+  
     function updateTextColor() {
       const neonTextElements = document.querySelectorAll(".neon-text");
       if (body.classList.contains("dark-mode")) {
